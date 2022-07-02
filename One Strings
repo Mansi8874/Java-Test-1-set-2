@@ -1,0 +1,12 @@
+public class Solution {
+	public static int findOneStrings(String str) {
+		// Write your code here.
+        int res=0,count=0;
+        for(int i=0;i<str.length();i++){
+            count=str.charAt(i) =='1' ? count+1 : 0 ;
+            res=(res+count);
+            
+        }
+        return res;
+	}
+}
